@@ -1,4 +1,4 @@
-// java.js
+//scripts.js
 
 document.addEventListener('DOMContentLoaded', function() {
     const tags = document.querySelectorAll('.tag');
