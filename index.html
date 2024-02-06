@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="page/logo2.png" alt="Logo" width="225" height="85">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="ค้นหาเมนูอาหาร" >
+            <button type="submit">Search</button>
+        </div>
+    </header>
+    <nav class="tag-bar">
+        <ul>
+            <li><a href="#" class="tag" data-target="options1">อาหารแต่ละภาค</a></li>
+            <li><a href="#" class="tag" data-target="options2">ช่วงเวลาอาหาร</a></li>
+            <li><a href="#" class="tag" data-target="options3">ประเภทอาหาร</a></li>
+        </ul>
+        <div class="login">
+            <button>Login</button>
+        </div>
+        <p></p>
+    </nav>
+    <div id="options1" class="options">
+        <div class="option">อาหารภาคเหนือ</div>
+        <div class="option">อาหารภาคกลาง</div>
+        <div class="option">อาหารภาคอีสาน</div>
+        <div class="option">อาหารภาคใต้</div>
+    </div>
+    <div id="options2" class="options">
+        <div class="option">อาหารเช้า</div>
+        <div class="option">อาหารกลางวัน</div>
+        <div class="option">อาหารเย็น</div>
+    </div>
+    <div id="options3" class="options">
+        <div class="option">ประเภทแกง</div>
+        <div class="option">ประเภทต้ม</div>
+        <div class="option">ประเภทนึ่ง</div>
+        <div class="option">ประเภทผัด</div>
+        <div class="option">ประเภททอด</div>
+        <div class="option">ประเภทตุ๋น</div>
+        <div class="option">ประเภทยำ</div>
+    </div>
+    </nav>
+    <div class="image-slider">
+        <div class="slider-wrapper">
+            <img src="page/slider1.jpg" alt="Image 1" class="slider-image">
+            <img src="page/slider2.jpg" alt="Image 2" class="slider-image">
+            <img src="page/slider3.jpeg" alt="Image 3" class="slider-image">
+        </div>
+        <button class="prev-button" onclick="slide(-1)">Prev</button>
+        <button class="next-button" onclick="slide(1)">Next</button>
+    </div>  
+    <p></p>
+    
+    <div class="menu-text">เมนูอาหาร</div>
+
+    <div class="menu-container">
+        <div class="menu-row">
+            <div class="menu-item">
+                <img src="page/menu1.jpg" alt="Menu 1" >
+                <p class="menu-name">ข้าวมันไก่</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu2.jpg" alt="Menu 2" >
+                <p class="menu-name">ข้าวหมกไก่</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu3.jpg" alt="Menu 3" >
+                <p class="menu-name">ข้าวกะเพราหมูสับไข่ดาว</p>
+            </div>
+        </div>
+        
+        
+        <div class="menu-row">
+            <div class="menu-item">
+                <img src="page/menu4.jpg" alt="Menu 4" >
+                <p class="menu-name">ข้าวผัดกุ้ง</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu5.jpg" alt="Menu 5" >
+                <p class="menu-name">ข้าวขาหมู</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu6.jpg" alt="Menu 6" >
+                <p class="menu-name">ข้าวคลุกกะปิ</p>
+            </div>
+        </div>
+
+
+        <div class="menu-row">
+            <div class="menu-item">
+                <img src="page/menu7.jpg" alt="Menu 7" >
+                <p class="menu-name">ก๋วยเตี๋ยวไก่มะระ</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu8.jpg" alt="Menu 8" >
+                <p class="menu-name">ไก่ทอดสมุนไพร</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu9.jpg" alt="Menu 9" >
+                <p class="menu-name">ข้าวไข่เจียว</p>
+            </div>
+        </div>
+
+
+        <div class="menu-row">
+            <div class="menu-item">
+                <img src="page/menu10.jpg" alt="Menu 10" >
+                <p class="menu-name">แหนมเนือง</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu11.jpg" alt="Menu 11" >
+                <p class="menu-name">แกงฮังเล</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu12.jpg" alt="Menu 12" >
+                <p class="menu-name">ไก่ผัดขมิ้น</p>
+            </div>
+        </div>
+
+
+        <div class="menu-row">
+            <div class="menu-item">
+                <img src="page/menu13.jpg" alt="Menu 13" >
+                <p class="menu-name">ถุงทอง</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu14.jpg" alt="Menu 14" >
+                <p class="menu-name">หมูโสร่ง</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu15.jpg" alt="Menu 15" >
+                <p class="menu-name">หอยแครงลวก</p>
+            </div>
+        </div>
+        
+        <div class="menu-row">
+            <div class="menu-item">
+                <img src="page/menu16.jpg" alt="Menu 16" >
+                <p class="menu-name">ปอเปี๊ยะทอด</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu17.jpg" alt="Menu 17" >
+                <p class="menu-name">ข้าวต้ม</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu18.jpg" alt="Menu 18" >
+                <p class="menu-name">ปลาราดพริก</p>
+            </div>
+        </div>
+
+
+        <div class="menu-row">
+            <div class="menu-item">
+                <img src="page/menu19.jpg" alt="Menu 19" >
+                <p class="menu-name">แกงเขียวหวาน</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu20.jpg" alt="Menu 20" >
+                <p class="menu-name">ต้มยำกุ้ง</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu21.jpg" alt="Menu 21" >
+                <p class="menu-name">ผัดไท</p>
+            </div>
+        </div>
+
+
+        <div class="menu-row">
+            <div class="menu-item">
+                <img src="page/menu22.jpg" alt="Menu 22" >
+                <p class="menu-name">ไก่ต้มน้ำปลา</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu23.jpg" alt="Menu 23" >
+                <p class="menu-name">ห่อหมก</p>
+            </div>
+            <div class="menu-item">
+                <img src="page/menu24.png" alt="Menu 24" >
+                <p class="menu-name">เห็ดเข็มทองทอด</p>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="java.js"></script>
+</body>
+</html>
