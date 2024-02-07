@@ -13,8 +13,8 @@ header {
 }
 
 .logo img {
-    max-width: 100px;
-    height: auto;
+    max-width: 225;
+    height: 85;
 }
 
 .tag-selection {
@@ -39,6 +39,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    margin-top: 20px;
 }
 
 .menu-item {

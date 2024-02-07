@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigh UP</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="stylesignup.css">
+</head>
+<body>
+    <form>
+        <h3>WelCome to Sigh UP</h3>
+        <div class="box-input">
+            <input type="email" placeholder="Email" id="email">
+            <input type="password" placeholder="Password" id="password">
+            <button type="button" onclick="createdata()">Sigh up</button>
+            <span style="color: #808B96;"> have an account?<a href="indexlogin.html" id="Sigh-up">log in</a></span>
+        </div>
+        <hr>
+        <div class="logo">
+            <button type="button" id="facebook"><i class="fa-brands fa-facebook"><span  style="color: white; font-family: 'Roboto', sans-serif; ">Log in with Facebook</span></i></button>
+            <button type="button" id="google" onmousemove="onmouseGG()" onmouseleave="onmouseleaveGG()"><i class="fa-brands fa-google"><span id="span-gg">Log in with Google</span></i></button>
+        </div>
+    </form>
+    <script src="scriptsignup.js"></script>
+</body>
+</html>

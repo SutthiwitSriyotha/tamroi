@@ -13,12 +13,11 @@ header {
 }
 
 .logo {
-    order: 1; /* จัดโลโก้ไปทางซ้าย */
+    order: 1; 
 }
 
-
 .search-bar {
-    order: 3; /* จัดช่องค้นหาไปทางขวา */
+    order: 3;
 }
 
 .options {
@@ -43,23 +42,22 @@ header {
 .tag-bar ul {
     display: flex;
     margin-left:350px;
-    margin-top: -50px;
-    
-    
+    margin-top: -50px; 
 }
 
 .tag-bar li {
-    margin-left: 70px; /* ระยะห่างระหว่าง <li> */
+    margin-left: 70px;
 }
 
 .login {
     margin-top: 5px; 
-    margin-left:45px;
+    margin-left:50px;
+    text-decoration-color: white;
 }
 
 .login button {
     padding: 10px 70px;
-    background-color: #424344;
+    background-color: #696767;
     color: white;
     border: none;
     cursor: pointer;
@@ -70,14 +68,15 @@ header {
     background-color: #3f99cd;
 }
 
+
 input[type="text"] {
     padding: 8.5px 60px;
     text-align: center;
-
 }
+
 .search-bar button {
     padding: 8.5px 30px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .image-slider {
@@ -99,12 +98,9 @@ input[type="text"] {
     display: flex;
 }
 
-
 .slider-wrapper {
     animation: slideAnimation 1s ease infinite;
 }
-
-
 
 .prev-button, .next-button {
     position: absolute;
@@ -148,7 +144,6 @@ input[type="text"] {
     height: 290px;
     border-radius: 15px; /* ทำให้รูปมีเส้นขอบโค้ง */
     border: 1px solid rgba(207, 205, 205, 0.9);
-    
 }
 
 .menu-name {
