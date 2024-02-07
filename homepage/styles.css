@@ -92,11 +92,19 @@ input[type="text"] {
     width: 100%; /* กำหนดให้รูปภาพเต็มความกว้างของสไลด์ */
     height: 100%; /* กำหนดให้รูปภาพเต็มความสูงของสไลด์ */
     object-fit: cover; /* ทำให้รูปภาพปรับตัวเข้ากับพื้นที่ที่กำหนดไว้โดยไม่เกิน */
+    transition: transform 1.5s ease-in-out;
 }
 
 .slider-wrapper {
     display: flex;
 }
+
+
+.slider-wrapper {
+    animation: slideAnimation 1s ease infinite;
+}
+
+
 
 .prev-button, .next-button {
     position: absolute;
@@ -121,7 +129,7 @@ input[type="text"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 10px; /* เว้นระยะห่างระหว่างแถว */
+    gap: 2px; /* เว้นระยะห่างระหว่างแถว */
 }
 
 .menu-row {
@@ -132,12 +140,12 @@ input[type="text"] {
 .menu-item {
     flex: 1; /* รูปเต็มกว้าง */
     max-width: calc(40% - 10px); /* สำหรับจำกัดความกว้างของแต่ละรูป */
-    padding: 10px;
+    padding: 12px;
 }
 
 .menu-item img {
-    width: 462px;
-    height: 280px;
+    width: 475px;
+    height: 290px;
     border-radius: 15px; /* ทำให้รูปมีเส้นขอบโค้ง */
     border: 1px solid rgba(207, 205, 205, 0.9);
     
