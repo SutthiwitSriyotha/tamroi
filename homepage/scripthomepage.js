@@ -59,4 +59,3 @@ function slide(direction) {
 }
 
 
-

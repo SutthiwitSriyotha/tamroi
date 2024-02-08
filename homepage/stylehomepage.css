@@ -84,14 +84,14 @@ input[type="text"] {
     height: 650px;
     overflow: hidden;
     position: relative;
-    margin-top: 10px; /* ปรับระยะห่างของ Image Slider จาก Tag Bar */
+    margin-top: 5px; /* ปรับระยะห่างของ Image Slider จาก Tag Bar */
 }
 
 .slider-image {
     width: 100%; /* กำหนดให้รูปภาพเต็มความกว้างของสไลด์ */
     height: 100%; /* กำหนดให้รูปภาพเต็มความสูงของสไลด์ */
     object-fit: cover; /* ทำให้รูปภาพปรับตัวเข้ากับพื้นที่ที่กำหนดไว้โดยไม่เกิน */
-    transition: transform 1.5s ease-in-out;
+    transition: transform 2.5s ease-in-out;
 }
 
 .slider-wrapper {
@@ -137,12 +137,13 @@ input[type="text"] {
     flex: 1; /* รูปเต็มกว้าง */
     max-width: calc(40% - 10px); /* สำหรับจำกัดความกว้างของแต่ละรูป */
     padding: 12px;
+    margin-bottom: -5px;
 }
 
 .menu-item img {
-    width: 475px;
+    width: 474px;
     height: 290px;
-    border-radius: 15px; /* ทำให้รูปมีเส้นขอบโค้ง */
+    border-radius: 25px; /* ทำให้รูปมีเส้นขอบโค้ง */
     border: 1px solid rgba(207, 205, 205, 0.9);
 }
 
