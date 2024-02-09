@@ -41,6 +41,18 @@ form h3{
     align-items: center;
 }
 
+.otp-box{
+    display: flex;
+}
+#Box-otp{
+    width: 70px;
+    margin-right: 10px;
+}
+
+#otp{
+    width: 320px;
+}
+
 .box-input input{
     width: 400px;
     height: 50px;
@@ -55,6 +67,20 @@ form h3{
     margin-top: 20px;
 }
 
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+}
 
 .box-input input::placeholder{
     color: #443D43;
@@ -62,8 +88,12 @@ form h3{
 }
 
 .box-input input:focus::placeholder{
-    opacity: 0;
-    
+    opacity: 1;
+    color: white;   
+}
+
+.box-input input:not(:focus){
+    color: black;   
 }
 
 .box-input input:focus{

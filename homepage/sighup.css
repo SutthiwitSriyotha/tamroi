@@ -19,7 +19,7 @@ body{
 form{
     background-color: white;
     width: 500px;
-    height: 500px;
+    height: 600px;
     border-radius: 10px;
     margin-top: 50px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -46,8 +46,8 @@ form h3{
     height: 50px;
     outline: none;
     border: none;
-    background-color: rgb(180, 240, 240);
-    border-radius: 7px;
+    background-color: rgb(153, 199, 239);
+    border-radius: 15px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding-left: 20px;
     transition: 0.5s;
@@ -55,6 +55,20 @@ form h3{
     margin-top: 20px;
 }
 
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+}
 
 .box-input input::placeholder{
     color: #443D43;
@@ -62,8 +76,12 @@ form h3{
 }
 
 .box-input input:focus::placeholder{
-    opacity: 0;
-    
+    opacity: 1;
+    color: white;   
+}
+
+.box-input input:not(:focus){
+    color: black;   
 }
 
 .box-input input:focus{
@@ -90,11 +108,11 @@ form h3{
 .box-input button{
     background-color: #1383D6;
     border: none;
-    height: 50px;
-    width: 400px;
-    border-radius: 7px;
+    height: 45px;
+    width: 280px;
+    border-radius: 20px;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     transition: 0.3s;
     cursor: pointer;
@@ -149,7 +167,7 @@ form hr{
 
 .logo #google{
     margin-top: 10px;
-    background-color: #b6b8b9;
+    background-color: #000000;
     width: 400px;
     height: 40px;
     border-radius: 7px;
@@ -180,7 +198,7 @@ form hr{
     form{
         background-color: white;
         width: 300px;
-        height: 500px;
+        height: 550px;
         border-radius: 10px;
         margin-top: 50px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -257,7 +275,7 @@ form hr{
     form{
         background-color: white;
         width: 300px;
-        height: 500px;
+        height: 550px;
         border-radius: 10px;
         margin-top: 50px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -334,7 +352,7 @@ form hr{
     form{
         background-color: white;
         width: 300px;
-        height: 500px;
+        height: 550px;
         border-radius: 10px;
         margin-top: 50px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

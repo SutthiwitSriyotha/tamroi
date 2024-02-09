@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0,7,11);
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+
+form{
+    background-color: white;
+    width: 500px;
+    height: 580px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+form h3{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.box-input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-input input{
+    width: 400px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: rgb(153, 199, 239);
+    border-radius: 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding-left: 20px;
+    transition: 0.5s;
+    color: white;
+    margin-top: 20px;
+}
+
+@keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-10px);
+    }
+    50% {
+      transform: translateX(10px);
+    }
+    75% {
+      transform: translateX(-10px);
+    }
+}
+
+.box-input input::placeholder{
+    color: #443D43;
+    transition: 0.3s;
+}
+
+.box-input input:focus::placeholder{
+    opacity: 1;
+    color: white;   
+}
+
+.box-input input:not(:focus){
+    color: black;   
+}
+
+.box-input input:focus{
+    background-color: #264053;
+}
+
+.box-input span{
+    font-family: 'Roboto', sans-serif;
+    color: #35A9FF;
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 15px;
+    
+}
+
+.box-input span a{
+    text-decoration: none;
+}
+
+#Sigh-up{
+    margin-left: 5px;
+}
+
+.box-input button{
+    background-color: #1383D6;
+    border: none;
+    height: 45px;
+    width: 280px;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.box-input button:hover{
+    background-color: #054473;
+}
+
+form hr{
+    margin-top: 20px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.logo #facebook{
+    margin-top: 10px;
+    background-color: #054473;
+    width: 400px;
+    height: 40px;
+    border-radius: 7px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.logo #facebook:hover{
+    background-color: #1383D6;
+}
+
+
+.logo #facebook i{
+    color: white;
+    font-size: 20px;
+}
+
+.logo #facebook i span{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.logo #google{
+    margin-top: 10px;
+    background-color: #b6b8b9;
+    width: 400px;
+    height: 40px;
+    border-radius: 7px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.logo #google i {
+    color: #4285F4;
+    font-size: 20px;
+    margin-left: -15px;
+}
+
+.logo #google i span{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 320px){
+    form{
+        background-color: white;
+        width: 300px;
+        height: 500px;
+        border-radius: 10px;
+        margin-top: 50px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .box-input input{
+        margin-top: 20px;
+        width: 250px;
+        height: 50px;
+        outline: none;
+        border: none;
+        background-color: rgb(180, 240, 240);
+        border-radius: 7px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding-left: 20px;
+        transition: 0.5s;
+        color: white;
+        
+    }
+    .box-input button{
+        background-color: #1383D6;
+        border: none;
+        height: 50px;
+        width: 250px;
+        border-radius: 7px;
+        margin-top: 20px;
+        font-size: 20px;
+        color: white;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        margin-left: 25px;
+    }
+
+    .logo #facebook{
+        margin-top: 10px;
+        background-color: #054473;
+        width: 250px;
+        height: 40px;
+        border-radius: 7px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: none;
+        cursor: pointer;
+    }
+    .logo #google{
+        margin-top: 10px;
+        background-color: #b6b8b9;
+        width: 250px;
+        height: 40px;
+        border-radius: 7px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 480px){
+    form{
+        background-color: white;
+        width: 300px;
+        height: 500px;
+        border-radius: 10px;
+        margin-top: 50px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .box-input input{
+        margin-top: 20px;
+        width: 250px;
+        height: 50px;
+        outline: none;
+        border: none;
+        background-color: rgb(180, 240, 240);
+        border-radius: 7px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding-left: 20px;
+        transition: 0.5s;
+        color: white;
+        
+    }
+    .box-input button{
+        background-color: #1383D6;
+        border: none;
+        height: 50px;
+        width: 250px;
+        border-radius: 7px;
+        margin-top: 20px;
+        font-size: 20px;
+        color: white;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        margin-left: 25px;
+    }
+
+    .logo #facebook{
+        margin-top: 10px;
+        background-color: #054473;
+        width: 250px;
+        height: 40px;
+        border-radius: 7px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: none;
+        cursor: pointer;
+    }
+    .logo #google{
+        margin-top: 10px;
+        background-color: #b6b8b9;
+        width: 250px;
+        height: 40px;
+        border-radius: 7px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 600px){
+    form{
+        background-color: white;
+        width: 300px;
+        height: 500px;
+        border-radius: 10px;
+        margin-top: 50px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .box-input input{
+        margin-top: 20px;
+        width: 250px;
+        height: 50px;
+        outline: none;
+        border: none;
+        background-color: rgb(180, 240, 240);
+        border-radius: 7px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        padding-left: 20px;
+        transition: 0.5s;
+        color: white;
+        
+    }
+    .box-input button{
+        background-color: #1383D6;
+        border: none;
+        height: 50px;
+        width: 250px;
+        border-radius: 7px;
+        margin-top: 20px;
+        font-size: 20px;
+        color: white;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        margin-left: 25px;
+    }
+
+    .logo #facebook{
+        margin-top: 10px;
+        background-color: #054473;
+        width: 250px;
+        height: 40px;
+        border-radius: 7px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: none;
+        cursor: pointer;
+    }
+    .logo #google{
+        margin-top: 10px;
+        background-color: #b6b8b9;
+        width: 250px;
+        height: 40px;
+        border-radius: 7px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: none;
+        cursor: pointer;
+    }
+}
