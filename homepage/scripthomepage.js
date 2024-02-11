@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            // เรียกใช้งานฟังก์ชันเพื่อแสดงค่าที่เกี่ยวข้อง
+            
             displayValue(target);
         });
     });
 
-    // ปิดการแสดงผลเมื่อคลิกที่แท็กอีกครั้ง
+    
     document.addEventListener('click', function(event) {
         if (!event.target.classList.contains('tag')) {
             const options = document.querySelectorAll('.options');
@@ -32,11 +32,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // ฟังก์ชันสำหรับแสดงค่าที่เกี่ยวข้อง
+    
     function displayValue(target) {
         const option = document.getElementById(target);
         const value = option.innerText;
-        console.log(value); // แสดงค่าใน console สำหรับการทดสอบ คุณสามารถเปลี่ยนแปลงการแสดงผลได้ตามที่ต้องการ
+        console.log(value); 
     }
 });
 
@@ -57,5 +57,3 @@ function slide(direction) {
     const offset = -currentSlide * slides[0].offsetWidth;
     document.querySelector('.slider-wrapper').style.transform = `translateX(${offset}px)`;
 }
-
-
